@@ -22,7 +22,7 @@ export default class ShopItemClass extends React.Component {
         <div className="ShopItemClass-HighlightWindow_mobile"><div className="ShopItemClass-HighlightOverlay"></div></div>
         <div className="ShopItemClass-Divider"></div>
         <div className="ShopItemClass-PurchaseInfo">
-          <div className="ShopItemClass-Price">{item.currency}{item.price}</div>
+          <div className="ShopItemClass-Price">{item.currency}{item.price.toFixed(2)}</div>
           <button>Добавить в корзину</button>
         </div>
       </div>

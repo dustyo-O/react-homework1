@@ -14,7 +14,7 @@ export default function ShopItemFunc(props) {
       <div className="ShopItemFunc-HighlightWindow_mobile"><div className="ShopItemFunc-HighlightOverlay"></div></div>
       <div className="ShopItemFunc-Divider"></div>
       <div className="ShopItemFunc-PurchaseInfo">
-        <div className="ShopItemFunc-Price">{item.currency}{item.price}</div>
+        <div className="ShopItemFunc-Price">{item.currency}{item.price.toFixed()}</div>
         <button>Добавить в корзину</button>
       </div>
     </div>
